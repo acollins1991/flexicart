@@ -5,6 +5,7 @@ const webpackBaseConfig = require('./webpack.base.config.js');
 
 module.exports = merge(webpackBaseConfig, {
   mode: 'development',
+  entry: path.join(__dirname, '../src/development.js'),
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
