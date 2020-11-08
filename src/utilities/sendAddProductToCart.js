@@ -1,3 +1,9 @@
+/**
+ * If click target is has attribute data-flexicart-product
+ * fire addProductToCart method on App.vue component,
+ * using data-flexicart-product-* as the product config
+ * @param {document#event:click} event
+ */
 const sendAddProductToCart = (event) => {
   const targetElement = event.target;
 
